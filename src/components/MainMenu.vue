@@ -72,11 +72,13 @@
             class="bg-yellow-200 text-gray-800 w-40 focus:outline-none"
             v-on:click="binarySearch"
             :disabled="disableSearch"
-          >search</button>
-
+          >
+            search
+          </button>
         </div>
+
         <div class="w-full h-full bg-other-green py-5">
-          <BinarySearch
+          <BinarySearchResult
             v-bind:items="items"
             v-bind:itemsBinary="itemsBinary"
           />
@@ -90,7 +92,7 @@
 <script>
 import GenerateNumbers from "./GenerateNumbers.vue";
 import SelectOption from "./SelectOption.vue";
-import BinarySearch from "./BinarySearch.vue";
+import BinarySearchResult from "./BinarySearchResult.vue";
 export default {
   name: "MainMenu",
   data() {
@@ -118,7 +120,7 @@ export default {
   components: {
     GenerateNumbers,
     SelectOption,
-    BinarySearch,
+    BinarySearchResult,
   },
   watch: {
     /**

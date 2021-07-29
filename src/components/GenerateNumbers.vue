@@ -1,7 +1,7 @@
 <template>
   <div
     class="h-10 w-40 bg-indigo-500 flex items-center justify-center cursor-pointer"
-    v-on:click="tes()"
+    v-on:click="createNumbers()"
   >
     <h3 class="text-white font-mono text-lg ">{{title}}</h3>
   </div>
@@ -20,7 +20,7 @@ export default {
     };
   },
   methods: {
-    tes() {
+    createNumbers() {
       for (let i = 0; i < this.total; i++) {
         this.arrNumbers.push(Math.floor(Math.random() * 100) + 1);
       }
