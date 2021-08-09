@@ -4,7 +4,7 @@
     <select
       class="h-full w-full bg-transparent text-white font-mono text-lg flex justify-center items-center outline-none"
       v-model="select"
-      v-on:change="$emit('event-update-select',select)"
+      v-on:change="$emit('update-select',select)"
       name=""
       id=""
     >

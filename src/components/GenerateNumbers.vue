@@ -28,7 +28,7 @@ export default {
       // sorting array menggunakan algoritma bubble sort
       this.bubbleSort();
 
-      this.$emit("clicked", this.arrNumbers);
+      this.$emit("create-numbers", this.arrNumbers);
     },
     bubbleSort() {
       let n = this.arrNumbers.length;
