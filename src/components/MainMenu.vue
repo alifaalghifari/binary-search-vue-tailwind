@@ -1,12 +1,12 @@
 <template>
-  <div class="h-screen w-screen flex flex-col px-80 ">
+  <div class="h-screen w-screen flex flex-col px-64 ">
     <div class=" flex space-x-5 my-40">
-      <Help />
-      <BinarySearchExplanations />
+      <Help class="shadow-lg" />
+      <BinarySearchExplanations class="shadow-lg" />
     </div>
     <div class="w-auto ">
-      <div class="w-full h-96 bg-other-blue flex flex-col">
-        <div class="flex justify-around py-2">
+      <div class="w-full h-96 bg-other-blue flex flex-col shadow-lg">
+        <div class="flex justify-around py-2 shadow-2xl">
 
           <SelectOption
             v-bind:options="optionsNumbers"
@@ -67,7 +67,6 @@ export default {
         { text: "9", value: 9 },
         { text: "15", value: 15 },
         { text: "20", value: 20 },
-        { text: "50", value: 50 },
       ],
       items: [],
       itemsBinary: [],
