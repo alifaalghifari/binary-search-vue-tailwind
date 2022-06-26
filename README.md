@@ -1,5 +1,10 @@
 # binary-search-vue
 
+## Link web
+```
+https://binary-search-vue.herokuapp.com/
+```
+
 ## Project setup
 ```
 npm install
